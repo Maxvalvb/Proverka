@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anomalia Guard | Fin-Sec Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'background': '#F7F9FC',
+              'surface': '#FFFFFF',
+              'primary': '#2563EB',
+              'primary-hover': '#1D4ED8',
+              'primary-light': '#EFF6FF',
+              'secondary': '#6B7280',
+              'text-primary': '#111827',
+              'text-secondary': '#4B5563',
+              'border': '#E5E7EB',
+              'critical': '#DC2626',
+              'high': '#F97316',
+              'medium': '#F59E0B',
+              'low': '#16A34A',
+
+              // Dark theme colors
+              'dark-background': '#111827',
+              'dark-surface': '#1F2937',
+              'dark-primary': '#3B82F6',
+              'dark-primary-hover': '#2563EB',
+              'dark-primary-light': '#2d3748',
+              'dark-secondary': '#9CA3AF',
+              'dark-text-primary': '#F9FAFB',
+              'dark-text-secondary': '#D1D5DB',
+              'dark-border': '#374151',
+            },
+            fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "recharts": "https://esm.sh/recharts@^3.0.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background dark:bg-dark-background">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
